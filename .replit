@@ -1,2 +1,0 @@
-language="nodejs"
-run="npm install && pm2 start replit.js && pm2 save && pm2 logs"
