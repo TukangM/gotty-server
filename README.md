@@ -69,11 +69,10 @@ TIDAK BOLEH MENGINSTAL CHROME ATAU CHROMIUM ( HARAP DOWNLOAD MELALUI GOTTY ATAU 
 
 -----------------------
 
-# 👥My Team [`Unem Team`](https://s.id/yusupkakuu)
+# 👥My Team
 * [`Zevanoo (Suport)`](https://github.com/zevanoo)
-* [`Afnan (Dev)`](https://github.com/afnan007a)
-* [`Npnpicy (Code)`](https://github.com/NpnpicyAvailable)
-* [`Muhammad Rasya Saputra (Suport)`](https://github.com/mrsyasptr)
-* [`TukangM (Idk)`](https://github.com/TukangM)
+* [`Afnan (Base)`](https://github.com/afnan007a)
+* [`Npnpicy (Record)`](https://github.com/NpnpicyAvailable)
+* [`TukangM (Suport)`](https://github.com/TukangM)
 
 -----------------------
