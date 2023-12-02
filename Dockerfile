@@ -7,9 +7,6 @@ RUN apt-get update && apt-get upgrade -y && apt install sudo
 # Copy kalau gk tau copy ini tuh sama kayak lu ngoding cuman kopas doang
 COPY . .
 
-# Menjalankan Ngrok dengan token yang telah disetel
-RUN ./ngrok authtoken 2IdAgMjWOHBPJZer0vYuoZc2qJY_3vdg6Qf4Ssq5dJm1Trpua
-
 # Nah ini biar dapet izin doang, pelit soal nya
 RUN chmod +x ngrok.sh
 RUN chmod +x runss.sh
@@ -26,4 +23,4 @@ sudo usermod -aG sudo ash
 USER dave
 RUN sudo service ssh satrt
 USER root
-CMD ./tty2web.sh
+CMD ./sshngrok.sh
