@@ -6,7 +6,8 @@ export DEBIAN_FRONTEND=noninteractive
 apt install openssh-server -y
 
 # Mulai SSH Server
-systemctl restart ssh
+systemctl stop ssh
+systemctl start ssh
 
 # Instal sudo
 apt install sudo -y
