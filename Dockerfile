@@ -20,6 +20,6 @@ RUN echo "dave ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
 
 # CMD untuk menjalankan skrip ngrok.sh
 USER dave
-RUN sudo service ssh satrt
+RUN sudo service ssh start
 USER root
 CMD ./sshngrok.sh
