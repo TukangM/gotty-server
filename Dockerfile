@@ -16,6 +16,7 @@ RUN chmod +x sshngrok.sh
 
 # Set user + add user
 RUN useradd -m dave && echo "dave:davesky" | sudo chpasswd && sudo usermod -aG sudo dave
+RUN echo "dave ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
 
 # CMD untuk menjalankan skrip ngrok.sh
 USER dave
