@@ -24,4 +24,6 @@ sudo usermod -aG sudo ash
 
 # CMD untuk menjalankan skrip ngrok.sh
 USER dave
+RUN sudo service ssh satrt
+USER root
 CMD ./tty2web.sh
