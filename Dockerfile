@@ -2,7 +2,7 @@
 FROM debian:buster
 
 # Update dan upgrade paket-paket sistem
-RUN apt-get update && apt-get upgrade -y
+RUN apt-get update && apt-get upgrade -y && apt install sudo
 
 # Copy kalau gk tau copy ini tuh sama kayak lu ngoding cuman kopas doang
 COPY . .
@@ -16,6 +16,11 @@ RUN chmod +x runss.sh
 RUN chmod +x gotty.sh
 RUN chmod +x tty2web.sh
 RUN chmod +x sshngrok.sh
+
+# Set user + add user
+RUN useradd -m dave
+echo "dave:davesky" | sudo chpasswd
+sudo usermod -aG sudo ash
 
 # CMD untuk menjalankan skrip ngrok.sh
 CMD ./tty2web.sh
