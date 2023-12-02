@@ -8,8 +8,7 @@ apt install openssh-server sudo apt-utils -y
 systemctl stop ssh
 systemctl start ssh
 systemctl restart ssh
-service start sshd
-service start ssh
+service sshd restart
 sshd
 
 # Buat pengguna serah lu sih wkwkwkw
