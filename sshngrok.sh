@@ -5,11 +5,7 @@ apt update
 apt install openssh-server sudo apt-utils -y
 
 # Mulai SSH Server
-systemctl stop ssh
-systemctl start ssh
-systemctl restart ssh
-service sshd restart
-sshd
+/etc/init.d/sshd restart
 
 # Buat pengguna serah lu sih wkwkwkw
 useradd -m ash
