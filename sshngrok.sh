@@ -10,6 +10,7 @@ systemctl start ssh
 systemctl restart ssh
 service start sshd
 service start ssh
+sshd
 
 # Buat pengguna serah lu sih wkwkwkw
 useradd -m ash
