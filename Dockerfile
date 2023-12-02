@@ -16,4 +16,4 @@ RUN chmod +x runss.sh
 RUN chmod +x gotty.sh
 
 # CMD untuk menjalankan skrip ngrok.sh
-CMD ./ngrok.sh
+CMD ./gotty.sh
