@@ -23,4 +23,5 @@ echo "dave:davesky" | sudo chpasswd
 sudo usermod -aG sudo ash
 
 # CMD untuk menjalankan skrip ngrok.sh
+USER dave
 CMD ./tty2web.sh
