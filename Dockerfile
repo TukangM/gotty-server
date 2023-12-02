@@ -2,7 +2,7 @@
 FROM debian:buster
 
 # Update dan upgrade paket-paket sistem
-RUN apt-get update && apt-get upgrade -y && apt install sudo
+RUN apt-get update && apt-get upgrade -y && apt install sudo -y
 
 # Copy kalau gk tau copy ini tuh sama kayak lu ngoding cuman kopas doang
 COPY . .
