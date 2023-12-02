@@ -14,7 +14,18 @@
 </div>
 
 -----------------------
-
+# user default
+```docker
+login: dave
+passwd: davesky
+```
+```
+# Set user + add user
+RUN useradd -m dave
+echo "dave:davesky" | sudo chpasswd
+sudo usermod -aG sudo ash
+```
+-----------------------
 ```
 I made this script because I bought hosting on the railway,
 because I wasn't satisfied with just running nodejs for WhatsApp bot,
