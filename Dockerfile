@@ -15,9 +15,7 @@ RUN chmod +x tty2web.sh
 RUN chmod +x sshngrok.sh
 
 # Set user + add user
-RUN useradd -m dave
-RUN echo "dave:davesky" | sudo chpasswd
-RUN sudo usermod -aG sudo ash
+RUN useradd -m dave && echo "dave:davesky" | sudo chpasswd && sudo usermod -aG sudo ash
 
 # CMD untuk menjalankan skrip ngrok.sh
 USER dave
